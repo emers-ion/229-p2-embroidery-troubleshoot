@@ -3,25 +3,194 @@
 
 @import "colors";
 @import "fonts";
+@import "button";
+@import "togglebutton";
+@import "header";
+@import "column";
+
 
 body {
-  background: @dark;
-  margin: 0;
-  padding: 0;
+  background-color: #A5A5A5;
+}
+
+#header {
+  #header;
+}
+
+
+// span {
+//   .sans-serif();
+//   .button-large();
+// }
+
+
+label{
+ text-align: center;
+ font-family: 'Open Sans Condensed';
+ font-size: 18px;
+ position: relative;
+}
+
+
+.helpbox {
+  display: block;
+  background: teal;
+  color: #fff;
+  margin-top: .3%;
+  width: 50%;
+  padding: 20px;
+  margin: .1% auto;
+  text-decoration: none;
+  overflow: visible;
+  position: relative;
+  clear: left;
+  cursor: pointer;
+  text-align: center;
+  transition-delay: 0s, 0s;
+  transition: all 0.6s ease-in-out;
+    &:hover{  background: #143835;}
+}
+
+.container-uno{
+  // background-color: rgba(0,0,0,0.5);
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  .force();
+
+    .column-uno, .column-dos {
+      width: 25%;
+      margin: 0 5%;
+      margin-left: 23.4%;
+      float: left;
+    }
+
+    .column-dos {
+      margin-left: 0;
+    }
+
+    .problem-box {
+      background: teal;
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      margin: 20 0;
+      text-decoration: none;
+      overflow: visible;
+      position: relative;
+      cursor: pointer;
+      transition-delay: 0s, 0s;
+      transition: all 0.6s ease-in-out;
+        &:hover{  background: #808000;}
+    }
+
+    .problem-box1 {
+      background: teal;
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      margin: 20 0;
+      text-decoration: none;
+      overflow: visible;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
+      transition-delay: 0s, 0s;
+      transition: all 0.6s ease-in-out;
+        &:hover{  background: #800080;}
+    }
+
+    .problem-content {
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      border: 2px dashed #fff;
+      box-shadow: 0 0 0 4px  rgba(0,0,0,0.5);
+      border-radius: 10px;
+      text-align:left;
+      margin: 0 0 0 25%;
+      padding: 10px;
+      max-width: 160px;
+    }
+}
+
+
+
+.content {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  // .column();
+}
+
+.toggle {
+  .togglebutton();
+}
+
+// .col-5 {
+//   background-color: rgba(0,0,0,0.5);
+//   color: white;
+//   text-align:center;
+//   padding: 20px;
+//   border: 2px dashed #fff;
+//   box-shadow: 0 0 0 4px  rgba(0,0,0,0.5);
+//   border-radius: 10px;
+//   width: 500px;
+//   margin-left: 47%;
+//        -moz-column-count: 3;
+//        -moz-column-gap: 20px;
+//        -webkit-column-count: 3;
+//        -webkit-column-gap: 20px;
+// }
+
+.button-1 {
+  float: left;
   color: white;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  border: 2px dashed #fff;
+  box-shadow: 0 0 0 4px  rgba(0,0,0,0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 1%;
+
+  .force();
 }
 
-h1 {
-  font-size: 6em;
-  background: @bright;
-  padding: .25em;
-
-  &:hover { background: @wildcard; }
-
-  span { color: @accent; }
+.container-dos, .container-tres, .container-quatro, .container-cinco, .container-seis, .container-siete {
+  .button-1{
+    float: none;
+    display: inline-block;
+    max-width: 25%;
+    vertical-align: top;
+  }
 }
 
-span {
-  color: red;
-  .sans-serif
+// table {
+//   margin-left: 43%;
+// }
+
+
+
+
+
+
+
+// this is specifically for fixing collapsed elements due to float
+.force(){
+
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+// fixes box model to include border and padding in overall width calculation
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }

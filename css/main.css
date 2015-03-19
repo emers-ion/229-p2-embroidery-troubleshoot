@@ -1,24 +1,249 @@
-body {
-  background: #333333;
-  margin: 0;
-  padding: 0;
+#header .head-photo-container {
   color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', Arial, Helvetica;
+  font-size: 2.5em;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000;
+  width: 75%;
+  height: 200px;
+  margin-left: 13%;
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/c/c8/Turkish_embroidery.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-h1 {
-  font-size: 6em;
-  background: #ffc0cb;
-  padding: .25em;
+#header .option-bar {
+  background-color: #5A5A5A;
+  text-align: center;
+  height: 35px;
+  width: 60%;
+  margin-left: 20%;
 }
-h1:hover {
-  background: #008080;
+#header .option-bar .option-button-container {
+  text-align: center;
+  line-height: 35px;
 }
-h1 span {
-  color: #ffdab9;
+#header .option-bar .option-bar-button {
+  color: #B4B4B4;
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
 }
-span {
-  color: red;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.25em;
-  letter-spacing: 0.125em;
+#header .option-bar .option-bar-button:hover {
+  color: white;
+  letter-spacing: .3em;
+}
+body {
+  background-color: #A5A5A5;
+}
+#header .head-photo-container {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', Arial, Helvetica;
+  font-size: 2.5em;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000;
+  width: 75%;
+  height: 200px;
+  margin-left: 13%;
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/c/c8/Turkish_embroidery.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#header .option-bar {
+  background-color: #5A5A5A;
+  text-align: center;
+  height: 35px;
+  width: 60%;
+  margin-left: 20%;
+}
+#header .option-bar .option-button-container {
+  text-align: center;
+  line-height: 35px;
+}
+#header .option-bar .option-bar-button {
+  color: #B4B4B4;
+  font-size: 1.8em;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+}
+#header .option-bar .option-bar-button:hover {
+  color: white;
+  letter-spacing: .3em;
+}
+label {
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  font-size: 18px;
+  position: relative;
+}
+.helpbox {
+  display: block;
+  background: teal;
+  color: #fff;
+  margin-top: .3%;
+  width: 50%;
+  padding: 20px;
+  margin: .1% auto;
+  text-decoration: none;
+  overflow: visible;
+  position: relative;
+  clear: left;
+  cursor: pointer;
+  text-align: center;
+  transition-delay: 0s, 0s;
+  transition: all 0.6s ease-in-out;
+}
+.helpbox:hover {
+  background: #143835;
+}
+.container-uno {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.container-uno:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.container-uno .column-uno,
+.container-uno .column-dos {
+  width: 25%;
+  margin: 0 5%;
+  margin-left: 23.4%;
+  float: left;
+}
+.container-uno .column-dos {
+  margin-left: 0;
+}
+.container-uno .problem-box {
+  background: teal;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 20 0;
+  text-decoration: none;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+  transition-delay: 0s, 0s;
+  transition: all 0.6s ease-in-out;
+}
+.container-uno .problem-box:hover {
+  background: #808000;
+}
+.container-uno .problem-box1 {
+  background: teal;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 20 0;
+  text-decoration: none;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  transition-delay: 0s, 0s;
+  transition: all 0.6s ease-in-out;
+}
+.container-uno .problem-box1:hover {
+  background: #800080;
+}
+.container-uno .problem-content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px dashed #fff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: left;
+  margin: 0 0 0 25%;
+  padding: 10px;
+  max-width: 160px;
+}
+.content {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.toggle {
+  display: none;
+  transition: all 0.6s ease-in-out;
+}
+.toggle + label {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+.toggle + label + div {
+  display: none;
+  margin-bottom: 10px;
+}
+.toggle:checked + label + div {
+  display: block;
+  overflow: visible;
+}
+.toggle + label:before {
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+.toggle:checked + label:before {
+  content: "\2212";
+}
+.button-1 {
+  float: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 2px dashed #fff;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 1%;
+}
+.button-1:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.container-dos .button-1,
+.container-tres .button-1,
+.container-quatro .button-1,
+.container-cinco .button-1,
+.container-seis .button-1,
+.container-siete .button-1 {
+  float: none;
+  display: inline-block;
+  max-width: 25%;
+  vertical-align: top;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
